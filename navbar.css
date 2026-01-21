@@ -1,0 +1,43 @@
+body{ 
+    background-color:bisque;
+
+}
+h1{ 
+    font-family: 'Press Start 2P'; 
+    text-align: center;
+}
+
+
+.members img {
+    width: 20%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+.sukien{ 
+    align-items: center;
+}
+.sukien img{ 
+    max-width: 580px;
+    align-items: center;
+
+}
+.sukien video{ 
+     max-width: 580px;
+    align-items: center;
+}
+fieldset{ 
+    border: dashed;
+    background-color: azure;
+}
+fieldset p{ 
+    font-style: italic; 
+    font-size: 35px; 
+    text-align: center;
+}
+fieldset legend{ 
+    font-family: 'press Start 2p';
+    font-size: 40px;
+}
+p{ 
+    font-size: 45px;
+}

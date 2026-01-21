@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi"> 
+<head> 
+<meta charset="utf-8">
+<title> 12A2 </title>
+<link rel="stylesheet" href="style.css"> 
+ <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header> 
+       <h1> Welcome to our website </h1> 
+      <p> Nhóm mình làm quếp này với mục đích lưu giữ hình ảnh và kỷ niệm của lớp chúng ta vào năm cuối cấp, 12A2 khóa 2025-2026, cô Châu Hải Yến chủ nhiệm. </p> 
+     
+    </header>
+    <main> 
+       <h1> NHAT KI 12A2 </h1>
+    <nav> 
+      <ul type="none"> 
+            <li><a href="thanhvien.html"> thành viên </a></li>
+              <li><a href="sukien.html"> sự kiện </a></li>
+                <li><a href="https://tthptnguyentrungtruc.edu.vn/thoikhoabieu/thoikhoabieu.php?khoatrang=thoikhoabieu_tracuuthoikhoabieu"> thời khóa biểu </a></li>
+                    
+        </ul>
+    </nav> 
+
+<div class="image-gallery">
+      <img src="camuanhac1.png" alt="Hình 1">
+      <p>12A2</p>
+        <img src="hinhlop.png" alt="Hình 2">
+      <p style="text-align:left"> 2025-2026 </p>
+      
+    </div>
+    
+</main> 
+<h1> và chúng mình còn:</h1>
+<div class="wrapper"> 
+ <div class="countdown col">
+  <div class="time middle">
+    <span>
+      <div id="d"> 130 </div>
+      Ngày 
+    </span>
+    <span> 
+      <div id="h"> 00 </div>
+      Giờ 
+    </span>
+    <span> 
+      <div id="m"> 00 </div>
+      Phút 
+    </span>
+<span> 
+      <div id="s"> 00 </div>
+      Giây 
+    </span>
+</div> 
+</div>
+</div>
+<script>
+   
+    const TOTAL_DAYS = 131;
+
+  
+    const endTime = Date.now() + TOTAL_DAYS * 24 * 60 * 60 * 1000;
+
+    function updateCountdown() {
+        const now = Date.now();
+        let diff = endTime - now;
+
+        if (diff <= 0) {
+            diff = 0;
+            clearInterval(timer);
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById("d").textContent = days;
+        document.getElementById("h").textContent = String(hours).padStart(2, "0");
+        document.getElementById("m").textContent = String(minutes).padStart(2, "0");
+        document.getElementById("s").textContent = String(seconds).padStart(2, "0");
+    }
+
+    updateCountdown(); 
+    const timer = setInterval(updateCountdown, 1000);
+</script>
+<footer> 
+  <p> Muốn upload thêm hình, hãy liên hệ: buiquan251108@gmail.com </p>
+</footer>
+
+
+
+
+</body> 
+</html>
