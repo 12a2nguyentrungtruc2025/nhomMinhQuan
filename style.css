@@ -116,10 +116,11 @@ h1{
 }
 .time span{ 
     padding: 0 14px; 
-    font-size: 15px; 
+    font-size: 45px; 
+    color: cyan;
 }
 .time span div{ 
-    font-size: 60px; 
+    font-size: 100px; 
     font-weight: bold; 
-    color:cyan;
+    color:aqua;
 }
